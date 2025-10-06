@@ -25,7 +25,7 @@ export const AppContextProvider=({children})=>{
       const fetchSeller = async () =>{
             try{
              const API_URL = "https://green-cart-backend-rho-black.vercel.app/";
-                  const {data} = await axios.get('{API_URL}/seller/is-auth');
+                  const {data} = await axios.get('{API_URL}/is-auth');
 
                   if(data.success){
                         setIsSeller(true);

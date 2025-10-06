@@ -15,7 +15,7 @@ const Login = () => {
          
          try {
            const API_URL = "https://green-cart-backend-rho-black.vercel.app/";
-            const {data} = await axios.post(`${API_URL}${state}`,{name,email,password});
+            const {data} = await axios.post(`${API_URL}/user/${state}`,{name,email,password});
 
             if(data.success){ 
 

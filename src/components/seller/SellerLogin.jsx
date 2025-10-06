@@ -21,7 +21,7 @@ const SellerLogin = () => {
                   toast.error(data.message)
             }
             
-          } catch (event) {
+          } catch (error) {
             toast.error(error.message);
           }
             
